@@ -4,16 +4,28 @@
     </button>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
 // import '@/assets/styles.css'
-const props = defineProps({
-    nameButton: {
-        type: String,
-        required: true
+
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+    props: {
+        nameButton: {
+            type: String,
+            required: true
+        },
+        typeButton: {
+            type: String,
+            required: true
+        }
     },
-    typeButton: {
-        type: String,
-        required: true
+    
+    setup(props){
+
+        return{
+            props
+        }
     }
 })
 

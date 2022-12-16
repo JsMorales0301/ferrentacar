@@ -1,15 +1,19 @@
 <template>
+
     <div class="container-full flex-center">
-        <FormLogin />
+        <!-- <FormRegister /> -->
+        <form-register-page-two />
     </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import FormLogin from '../components/FormLogin.vue';
+import FormRegister from '../components/FormRegisterPageOne.vue';
+import FormRegisterPageTwo from '../components/FormRegisterPageTwo.vue';
 export default defineComponent({
 
 })
+
 
 </script>
 
